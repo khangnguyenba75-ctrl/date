@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xem thời gian Đẹp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="home" class="home">
+    <div class="card">
+      <h1>Bắt đầu Xem thời gian Đẹp</h1>
+
+      <div class="setting">
+        <span>Chế độ AM/PM</span>
+        <button id="ampmToggle" class="switch off">Tắt</button>
+      </div>
+
+      <button id="startBtn" class="start">Bắt đầu</button>
+    </div>
+  </main>
+
+  <section id="clockScreen" class="clock-screen hidden">
+    <button id="backBtn" class="back">Quay lại</button>
+
+    <div class="clock-content">
+      <div id="date" class="date">--/--/----</div>
+      <div id="time" class="time">--:--:--</div>
+    </div>
+
+    <nav class="language">
+      <button class="lang-title" id="languageBtn">
+        Navigation language
+      </button>
+
+      <div id="languageMenu" class="language-menu hidden">
+        <div class="country">
+          <b>Việt Nam</b>
+          <span>Sáng SA</span>
+          <span>Không biết CH</span>
+        </div>
+
+        <div class="country">
+          <b>Mỹ</b>
+          <span>Sáng AM</span>
+          <span>Không biết CH</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="storage">
+      <span>LocalStorage</span>
+      <button id="storageToggle" class="switch off">Tắt</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+    </html>
